@@ -1,5 +1,8 @@
 import { ChartBarIcon, CalculatorIcon, CogIcon, CloudIcon } from '@heroicons/react/24/outline'
 import { Transition } from '@headlessui/react'
+import Footer from './Footer'
+import NavBar from './NavBar'
+
 
 const projects = [
   {
@@ -47,16 +50,15 @@ const projects = [
 
 export default function Projects() {
   return (
-    // <div className="overflow-hidden bg-gray-50">
-      <div className="relative mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
-
+    <div className="overflow-hidden bg-white">
+      <div className="relative mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="lg:col-span-1">
             <h2 className="flex justify-center text-5xl mb-6 font-black tracking-tight text-gray-900 sm:text-5xl">projects</h2>
           </div>
-        <div className="relative lg:grid lg:gap-x-8">
+        <div className="relative lg:grid lg:gap-x-8 mb-10">
           <dl className="mt-10 space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 sm:space-y-0 lg:col-span-2 lg:mt-0">
             {projects.map((projects) => (
-              <div className="grid justify-items-center font-bold text-2xl bg-gray-900 rounded-5xl" key={projects.name}>
+              <div className="grid justify-items-center font-bold text-2xl bg-gray-900 rounded-3xl" key={projects.name}>
                 <dt>
                   <p className="mt-5 mb-3 text-lg font-black leading-6 text-indigo-400">{projects.name}</p>
                 </dt>
@@ -69,6 +71,7 @@ export default function Projects() {
             ))}
           </dl>
         </div>
+      </div>
       </div>
   )
 }

@@ -83,7 +83,7 @@ export default function Example() {
               </div>
               <div className="hidden space-x-8 md:ml-10 md:flex">
                 {navigation.map((item) => (
-                  <Link key={item.name} to={item.href} className="text-base font-medium text-white hover:text-gray-300">
+                  <Link key={item.name} to={item.href} className="text-base font-medium text-white hover:text-indigo-400">
                     {item.name}
                   </Link>
                 ))}
@@ -92,7 +92,7 @@ export default function Example() {
             <div className="hidden md:flex md:items-center md:space-x-6">
               <a
                 href="https://drive.google.com/file/d/1mANmoks8Quvfn5z0fVNVLvaYFqAlTRIb/view?usp=sharing"
-                className="inline-flex items-center rounded-md border border-transparent bg-gray-600 px-4 py-2 text-base font-medium text-white hover:bg-gray-700"
+                className="inline-flex items-center rounded-md border border-transparent bg-indigo-400 px-4 py-2 text-base font-medium text-white hover:bg-gray-600"
               >
                 download resume
               </a>
