@@ -38,13 +38,15 @@ export default function BackToTop() {
           top: '93%',
           zIndex: '1',
           display: visible ? 'inline' : 'none',
-          backgroundColor: '#9cb59d',
+          backgroundColor: '#7F8AF6',
           '&:hover': {
-            backgroundColor: "#798f7a",
+            backgroundColor: "#8f91a7",
          },
         }}
-      >
-        <ArrowUpIcon />
+       >
+        {/* &uarr;  */}
+        <ArrowUpIcon></ArrowUpIcon>
+        {/* up arrow */}
       </Button>
     </div> 
   )
