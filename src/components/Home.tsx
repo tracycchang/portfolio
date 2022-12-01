@@ -38,9 +38,9 @@ const navigation = [
 
 const imagesPathsArray = [chicago, miso, krillin, cabo, pujol, yosemite]
 
-const CarouselImg = ({ imagesPaths }) => {
+const CarouselImg = ({ imagesPaths }: any) => {
   // Map an array of photos 
-  let arrayOfImages = imagesPaths.map((el, i) => {
+  let arrayOfImages = imagesPaths.map((el: any, i: any) => {
       return (
           <div>
               <img key={i} src={el} width={'50px'} height={'50px'}/>
