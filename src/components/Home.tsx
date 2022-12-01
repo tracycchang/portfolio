@@ -22,23 +22,24 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import cabo from '../public/cabo.jpg';
 import chicago from '../public/chicago.jpeg';
-import disneyland from '../public/disneyland.jpg';
+// import disneyland from '../public/disneyland.jpg';
 import miso from '../public/miso.jpeg';
 import krillin from '../public/krillin.jpeg';
 import pujol from '../public/pujol.jpg';
 import yosemite from '../public/yosemite.jpeg';
 
+
 const navigation = [
-  { name: 'about', href: 'about' },
-  { name: 'technologies', href: 'Technologies' },
-  { name: 'projects', href: 'projects' },
-  { name: 'contact', href: 'Contact' },
+  { name: 'Email', href: 'about' },
+  // { name: 'technologies', href: '#technologies' },
+  // { name: 'projects', href: '#projects' },
+  // { name: 'contact', href: 'contact' },
 ]
 
 const imagesPathsArray = [chicago, miso, krillin, cabo, pujol, yosemite]
 
 const CarouselImg = ({ imagesPaths }) => {
-  // Map an array of 6 random photos 
+  // Map an array of photos 
   let arrayOfImages = imagesPaths.map((el, i) => {
       return (
           <div>
@@ -66,11 +67,11 @@ export default function Example() {
           >
             <div className="flex flex-1 items-center">
               <div className="flex w-full items-center justify-between md:w-auto">
-                <a href="#">
+                <a href="http://tracychang.io/">
                   <span className="sr-only">tracychang</span>
                   <img
-                    className="h-8 w-auto sm:h-10"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    className="h-8 w-auto sm:h-10 hover:shadow-gray-800] ease-out hover:translate-y-1 transition-all rounded"
+                    src="https://i.postimg.cc/4dnpYBn6/3329-pink-sparkles.png"
                     alt=""
                   />
                 </a>
@@ -82,8 +83,14 @@ export default function Example() {
                 </div>
               </div>
               <div className="hidden space-x-8 md:ml-10 md:flex">
+                <a href="https://www.linkedin.com/in/tracycchang/" className="font-medium text-white hover:text-[#FEAD98]">
+                  LinkedIn
+                </a>
+                <a href="https://www.github.com/tracycchang/" className="font-medium text-white hover:text-[#FEAD98]">
+                  GitHub
+                </a>
                 {navigation.map((item) => (
-                  <Link key={item.name} to={item.href} className="text-base font-medium text-white hover:text-indigo-400">
+                  <Link key={item.name} to={item.href} className="text-base font-medium text-white hover:text-[#FEAD98]">
                     {item.name}
                   </Link>
                 ))}
@@ -92,7 +99,7 @@ export default function Example() {
             <div className="hidden md:flex md:items-center md:space-x-6">
               <a
                 href="https://drive.google.com/file/d/1mANmoks8Quvfn5z0fVNVLvaYFqAlTRIb/view?usp=sharing"
-                className="inline-flex items-center rounded-md border border-transparent bg-indigo-400 px-4 py-2 text-base font-medium text-white hover:bg-gray-600"
+                className="inline-flex items-center rounded-md border border-transparent bg-[#FE8A95] px-4 py-2 text-base font-medium text-white hover:bg-[#FEAD98]"
               >
                 download resume
               </a>
@@ -115,33 +122,44 @@ export default function Example() {
                 <div>
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    src="https://i.postimg.cc/4dnpYBn6/3329-pink-sparkles.png"
                     alt=""
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600">
+                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#FE8A95]">
                     <span className="sr-only">close menu</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
                 </div>
               </div>
-              <div className="pt-5 pb-6">
-                <div className="space-y-1 px-2">
+              <div>
+              <div className="pt-1 pb-1 px-5">
+              <a href="https://www.linkedin.com/in/tracycchang/" className="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:bg-[#FE8A95]">
+                  LinkedIn
+                </a>
+              </div>
+                <div className="pb-1 px-5">
+
+                <a href="https://www.github.com/tracycchang/" className="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:bg-[#FE8A95]">
+                  GitHub
+                </a>
+                </div>
+                <div className="pb-1 px-5">
                   {navigation.map((item) => (
                     <Link
                       key={item.name}
                       to={item.href}
-                      className="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50"
+                      className="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:bg-[#FE8A95]"
                     >
                       {item.name}
                     </Link>
                   ))}
                 </div>
-                <div className="mt-6 px-5">
+                <div className="mt-1 mb-2 px-5">
                   <a
                     href="https://drive.google.com/file/d/1mANmoks8Quvfn5z0fVNVLvaYFqAlTRIb/view?usp=sharing"
-                    className="block w-full rounded-md bg-indigo-600 py-3 px-4 text-center font-medium text-white shadow hover:bg-indigo-700"
+                    className="block w-full rounded-md bg-[#FE8A95] py-3 px-4 text-center font-medium text-white shadow hover:bg-[#FEAD98]"
                   >
                     download resume
                   </a>
@@ -171,7 +189,7 @@ export default function Example() {
                   </a> */}
                   <h1 className="mt-4 text-4xl font-black tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
                     <span className="block">hello, my name is </span>
-                    <span className="block text-indigo-400">tracy chang.</span>
+                    <span className="block text-[#FE8A95]">tracy chang.</span>
                   </h1>
                   <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                     I am a full-stack software engineer from Los Angeles, CA. Ever since I was in middle school, 

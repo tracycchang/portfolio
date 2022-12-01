@@ -38,9 +38,9 @@ export default function BackToTop() {
           top: '93%',
           zIndex: '1',
           display: visible ? 'inline' : 'none',
-          backgroundColor: '#7F8AF6',
+          backgroundColor: '#FE8A95',
           '&:hover': {
-            backgroundColor: "#8f91a7",
+            backgroundColor: "#FEAD98",
          },
         }}
        >

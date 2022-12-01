@@ -13,13 +13,13 @@ const technologies = [
     name: 'JavaScript',
     description:
       'ES6+',
-    icon: HeartIcon,
+    icon: SparklesIcon,
   },
   {
     name: 'Redux',
     description:
       '',
-    icon: SparklesIcon,
+    icon: HeartIcon,
   },
   {
     name: 'TypeScript',
@@ -31,7 +31,7 @@ const technologies = [
     name: 'Node.js',
     description: 
       '',
-    icon: SparklesIcon,
+    icon: HeartIcon,
   },
   {
     name: 'Express.js',
@@ -43,7 +43,7 @@ const technologies = [
     name: 'PostgreSQL',
     description:
       '',
-    icon: SparklesIcon,
+    icon: HeartIcon,
   },
   {
     name: 'HTML',
@@ -55,7 +55,7 @@ const technologies = [
     name: 'SASS',
     description:
       '',
-    icon: SparklesIcon,
+    icon: HeartIcon,
   },
   {
     name: 'CSS',
@@ -67,7 +67,7 @@ const technologies = [
     name: 'Material-UI',
     description:
       '',
-    icon: SparklesIcon,
+    icon: HeartIcon,
   },
   {
     name: 'Tailwind CSS',
@@ -79,7 +79,7 @@ const technologies = [
     name: 'Git/GitHub',
     description:
       '',
-    icon: SparklesIcon,
+    icon: HeartIcon,
   },
   {
     name: 'MongoDB',
@@ -91,7 +91,7 @@ const technologies = [
     name: 'Webpack',
     description:
       '',
-    icon: SparklesIcon,
+    icon: HeartIcon,
   },
   {
     name: 'Authentication',
@@ -103,7 +103,7 @@ const technologies = [
     name: 'TDD',
     description:
       'Jest',
-    icon: SparklesIcon,
+    icon: HeartIcon,
   },
   {
     name: 'Electron',
@@ -115,7 +115,7 @@ const technologies = [
     name: 'Docker',
     description:
       '',
-    icon: SparklesIcon,
+    icon: HeartIcon,
   },
   {
     name: 'AWS',
@@ -129,7 +129,7 @@ const technologies = [
 export default function Technologies() {
   return (
     // <div className="overflow-hidden bg-gray-50">
-      <div className="relative mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
+      <div id="technologies" className="relative mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
 
         <div className="lg:col-span-1">
           <h2 className="flex justify-center text-5xl mb-6 font-black tracking-tight text-gray-900 sm:text-5xl">technologies</h2>
@@ -141,7 +141,7 @@ export default function Technologies() {
               <div>
                 <dt>
               <div key={tech.name} className="grid justify-items-center">
-                  <div className="flex justify-center h-20 w-20 items-center rounded-md bg-[#5861AB] text-white">
+                  <div className="flex justify-center h-20 w-20 items-center rounded-md bg-[#FE8A95] text-white">
                     <tech.icon className="h-12 w-12" aria-hidden="true" />
                   </div>
               </div>

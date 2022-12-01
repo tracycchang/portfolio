@@ -1,7 +1,7 @@
 const navigation = [
   {
     name: 'GitHub',
-    href: 'https://github.com/oslabs-beta/ghost',
+    href: 'https://github.com/tracycchang/',
     icon: (props: any) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -13,8 +13,8 @@ const navigation = [
     ),
   },
   {
-    name: 'Dribble',
-    href: 'https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_500/MTc0OTY5NTE5ODk3Mzg4NDg0/sporty-dog-names-basketball-inspired-names-for-dogs.webp',
+    name: 'LinkedIn',
+    href: 'https://linkedin.com/in/tracycchang/',
     icon: (props: any) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path

@@ -50,7 +50,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="overflow-hidden bg-white">
+    <div id="projects" className="overflow-hidden bg-white">
       <div className="relative mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="lg:col-span-1">
             <h2 className="flex justify-center text-5xl mb-6 font-black tracking-tight text-gray-900 sm:text-5xl">projects</h2>
@@ -60,7 +60,7 @@ export default function Projects() {
             {projects.map((projects) => (
               <div className="grid justify-items-center font-bold text-2xl bg-gray-900 rounded-3xl" key={projects.name}>
                 <dt>
-                  <p className="mt-5 mb-3 text-lg font-black leading-6 text-indigo-400">{projects.name}</p>
+                  <p className="mt-5 mb-3 text-lg font-black leading-6 text-[#FE8A95]">{projects.name}</p>
                 </dt>
                 <div className = "object-scale-down w-96">
                 <img src={projects.image} />
