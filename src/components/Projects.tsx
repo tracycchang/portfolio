@@ -20,6 +20,8 @@ const projects = [
       'Website for the ghost application',
     built: 
       'React, TypeScript, Tailwind CSS, Tailwind UI',
+    href:
+      'https://www.ghost-metrics.io/',
   },
   {
     name: 'Welcome Home Friend 2.0',
@@ -60,7 +62,7 @@ export default function Projects() {
             {projects.map((projects) => (
               <div className="grid justify-items-center font-bold text-2xl bg-gray-900 rounded-3xl" key={projects.name}>
                 <dt>
-                  <p className="mt-5 mb-3 text-lg font-black leading-6 text-[#FE8A95]">{projects.name}</p>
+                  <p className="mt-5 mb-3 text-lg font-black leading-6 text-[#FE8A95]"><a href={projects.href}>{projects.name}</a></p>
                 </dt>
                 <div className = "object-scale-down w-96">
                 <img src={projects.image} />
