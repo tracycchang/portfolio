@@ -16,7 +16,7 @@ export default function Contact() {
           GitHub: <a href="https://github.com/tracycchang/" className="font-medium text-[#cdcdcd] hover:text-[#9cb59d]">
                     @tracycchang
                   </a>      
-          Email: hello@tracychang.io
+          Email: tracychang@gmail.com
                       
               
         {/* </div> */}

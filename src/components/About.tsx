@@ -15,7 +15,7 @@ export default function About() {
           GitHub: <a href="https://github.com/tracycchang/" className="font-medium text-[#FE8A95] hover:text-[#FEAD98]">
             @tracycchang </a>
           <br></br>    
-          Email: hello@tracychang.io          
+          Email: tracychang94@gmail.com         
               
         </div>
       </div>
